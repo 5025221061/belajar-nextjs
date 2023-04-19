@@ -28,7 +28,7 @@ export default function Navbar() {
           </button>
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="text-sm lg:flex-grow text-xs font-semibold">
+          <div className="lg:flex-grow text-xs font-semibold">
             <Link
               href="/games"
               passHref
