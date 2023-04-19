@@ -4,15 +4,17 @@ import Rewards from "./svg/rewards";
 import Affiliates from "./svg/affiliates";
 import Leaderboard from "./svg/leaderboard";
 import Discord from "./svg/discord";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <>
       <title>GrowDice - Provably Fair Growtopia Casino</title>
-      <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-3">
-        <div className="flex items-center flex-shrink-0 text-red-500 mr-6">
-          <span className="font-semibold text-xl tracking-tight hover:text-white">
-            My Website
+      <nav className="flex items-center justify-between flex-wrap fixed top-0 z-10 bg-gray-800 p-3 w-full h-fit -space-y-1" >
+        <div className="flex items-center flex-shrink-0 text-red-500 mr-6 ">
+          <span className="font-semibold text-xl tracking-tight hover:text-white hover:scale-110 transition">
+            <Link href="\">My Website</Link>
+            
           </span>
         </div>
         <div className="block lg:hidden">
@@ -28,11 +30,11 @@ export default function Navbar() {
           </button>
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="lg:flex-grow text-xs font-semibold">
+          <div className="lg:flex-grow font-semibold text-[10px]">
             <Link
               href="/games"
               passHref
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 "
+              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition"
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Dice className="" />
@@ -42,9 +44,9 @@ export default function Navbar() {
             <Link
               href="/rewards"
               passHref
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4"
+              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-100 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition hover:fill-red-500"
             >
-              <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
+              <span className="inline-block align-middle mr-1 hover:text-red-500 hover:">
                 <Rewards className="" />
               </span>
               <span className="inline-block align-middle ">REWARDS</span>
@@ -52,7 +54,7 @@ export default function Navbar() {
             <Link
               href="/affiliates"
               passHref
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4"
+              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition"
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Affiliates className="" />
@@ -62,7 +64,7 @@ export default function Navbar() {
             <Link
               href="/leaderboard"
               passHref
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4"
+              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition"
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Leaderboard className="" />
@@ -72,7 +74,7 @@ export default function Navbar() {
             <Link
               href="https://discord.com/"
               passHref
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4"
+              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition self-end"
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Discord className="" />
@@ -82,6 +84,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+      
     </>
   );
 }

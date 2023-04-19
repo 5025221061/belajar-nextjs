@@ -5,8 +5,8 @@ export default function Affiliates() {
       fill="currentColor"
       stroke-width="0"
       viewBox="0 0 512 512"
-      height="25"
-      width="25"
+      height="16"
+      width="16"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M448 400H64a16 16 0 010-32h384a16 16 0 010 32zm-32 48H96a16 16 0 010-32h320a16 16 0 010 32zM32 272H16v48a32 32 0 0032 32h48v-16a64.07 64.07 0 00-64-64z"></path>

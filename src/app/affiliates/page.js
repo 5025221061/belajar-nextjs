@@ -6,7 +6,7 @@ export default function contact() {
     <>
       <Navbar />
       {/* <title>aff</title> */}
-      <h1 className="text-center">Halaman AFFILIATES</h1>
+      <h1 className="text-center pt-16">Halaman AFFILIATES</h1>
     </>
   );
 }
