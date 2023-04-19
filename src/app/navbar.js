@@ -28,16 +28,16 @@ export default function Navbar() {
           </button>
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="text-sm lg:flex-grow">
+          <div className="text-sm lg:flex-grow text-xs font-semibold">
             <Link
               href="/games"
               passHref
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 "
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Dice className="" />
               </span>
-              <span className="inline-block align-middle ">GAMES</span>
+              <span className="inline-block align-middle">GAMES</span>
             </Link>
             <Link
               href="/rewards"
