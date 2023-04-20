@@ -10,11 +10,10 @@ export default function Navbar() {
   return (
     <>
       <title>GrowDice - Provably Fair Growtopia Casino</title>
-      <nav className="flex items-center justify-between flex-wrap fixed top-0 z-10 bg-gray-800 p-3 w-full h-fit -space-y-1" >
+      <nav className="flex items-center justify-between flex-wrap fixed top-0 z-10 bg-gray-800 p-3 w-full h-fit -space-y-1">
         <div className="flex items-center flex-shrink-0 text-red-500 mr-6 ">
           <span className="font-semibold text-xl tracking-tight hover:text-white hover:scale-110 transition">
             <Link href="\">My Website</Link>
-            
           </span>
         </div>
         <div className="block lg:hidden">
@@ -29,7 +28,7 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="lg:flex-grow font-semibold text-[10px]">
             <Link
               href="/games"
@@ -82,9 +81,16 @@ export default function Navbar() {
               <span className="inline-block align-middle ">DISCORD</span>
             </Link>
           </div>
+            <div className="inline-block ml-auto text-[12px] font-semibold translate-y-1 ">
+              <Link href="/login" className="lg:inline-block mr-3 hover:translate-y-[0.2rem] transition pl-[5px] pr-[5px] pb-[3px] pt-[3px]">
+                Sign in
+              </Link>
+              <Link href="/register" className="lg:inline-block mr-3 bg-[#4483eb] pl-[5px] pr-[5px] pb-[3px] pt-[3px] rounded-sm hover:bg-[#659ce9] hover:translate-y-[0.2rem] transition hover:text-gray-200">
+                Register
+              </Link>
+            </div>
         </div>
       </nav>
-      
     </>
   );
 }
