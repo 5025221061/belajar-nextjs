@@ -6,6 +6,9 @@ import Leaderboard from "./svg/leaderboard";
 import Discord from "./svg/discord";
 import Image from "next/image";
 
+// "use-client"
+
+
 export default function Navbar() {
   return (
     <>
