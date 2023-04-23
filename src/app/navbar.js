@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <title>GrowDice - Provably Fair Growtopia Casino</title>
-      <nav className="flex items-center justify-between flex-wrap fixed top-0 z-10 bg-gray-800 p-3 w-full h-fit -space-y-1">
+      <nav className="flex items-center flex-wrap fixed top-0 z-10 bg-gray-800 p-3 w-full h-fit -space-y-1">
         <div className="flex items-center flex-shrink-0 text-red-500 mr-6 ">
           <span className="font-semibold text-xl tracking-tight hover:text-white hover:scale-110 transition">
             <Link href="\">My Website</Link>
@@ -31,12 +31,12 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="lg:flex-grow font-semibold text-[10px]">
+        <div className="w-full grow lg:flex lg:items-center lg:w-auto">
+          <div className="font-semibold text-[10px]">
             <Link
               href="/games"
               passHref
-              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition"
+              className="menuNavbarLink"
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Dice className="" />
@@ -46,7 +46,7 @@ export default function Navbar() {
             <Link
               href="/rewards"
               passHref
-              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-100 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition hover:fill-red-500"
+              className="menuNavbarLink"
             >
               <span className="inline-block align-middle mr-1 hover:text-red-500 hover:">
                 <Rewards className="" />
@@ -56,7 +56,7 @@ export default function Navbar() {
             <Link
               href="/affiliates"
               passHref
-              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition"
+              className="menuNavbarLink"
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Affiliates className="" />
@@ -66,7 +66,7 @@ export default function Navbar() {
             <Link
               href="/leaderboard"
               passHref
-              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition"
+              className="menuNavbarLink"
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Leaderboard className="" />
@@ -76,7 +76,7 @@ export default function Navbar() {
             <Link
               href="https://discord.com/"
               passHref
-              className="translate-y-1 block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-red-500 mr-4 hover:translate-y-[0.34rem] transition self-end"
+              className="menuNavbarLink self-end"
             >
               <span className="inline-block align-middle  mr-1 hover:text-red-500 hover:">
                 <Discord className="" />
@@ -97,16 +97,3 @@ export default function Navbar() {
     </>
   );
 }
-
-// function Page() {
-//   return (
-//     <div>
-//       <Navbar />
-//       <div className="container mx-auto my-8">
-//         <h1 className="text-3xl font-bold">Welcome to my website!</h1>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Navbar;
